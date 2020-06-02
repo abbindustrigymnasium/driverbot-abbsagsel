@@ -1,26 +1,11 @@
-# Driverbot styrbas
-[Länk till Styrbasen på AWS](http://robodriver.s3.amazonaws.com/index.html)
+# Styrbasen
 
-## Vad ingår
-Dessa komponenter ingår i denna robotstyrbas
-
-### App.vue
-I App.vue binds alla komponenter ihop men även en dialogruta finns att klicka upp för att ställa in vilken MQTT broker man ska ansluta till.
-
-### Buttons.vue
-I Buttons.vue finns en enklare styrmöjlighet för att skicka kommandon för fram, bak, vänster och höger till mqtt.
-MQTT topicen jag döpt min till heter drive, så antingen döper du din till samma eller så byter du bara namn i koden.
-Det finns fyra knappar för att reglera hastighet.
-### Buttonsv2.vue
-I Buttonsv2.vue finns en mer avancerad styrmöjlighet för att skicka kommandon för fram, bak, vänster och höger, snett upp  och snett ner till mqtt.
-MQTT topicen jag döpt min till heter drive, så antingen döper du din till samma eller så byter du bara namn i koden.
-Det finns fyra knappar för att reglera hastighet.
-
-### Logger.vue
-En Komponent som loggar vilka kommandon som skickas över MQTT, vill du själv förbättra den så kan du göra att den läser av kommandon som även mikrokontrolllen skickar.
-
-### store.js
-Här sparas alla viktiga variabler som skickas mellan komponenterna.
+## Hur fungerar den?
+Hemsidan har ett antal simpla funktioner som erbjuder tydlighet utan att frånta den komplexa kataktär som ingår i kontrollering av motorer via internet.
+### Slider
+Med hjälp av en slider kan användaren lätt ändra huruvida motorn snurrar i höger- eller vänstervarv samt ifall den stoppas. Detta då den genom tre lägen lägger till f(forward), s(stop) och b(backwards) i en string som sedan läggs upp i MQTT.
+### Buttons
+Genom knapparna kan användaren ändra hastigheten samt ifall bilen svänger åt höger eller vänster. Utöver det finns även en stopp-knapp ifall användaren tappar kontrollen över bilen där läget ändras till s(stop).
 
 ## Project setup
 ```
