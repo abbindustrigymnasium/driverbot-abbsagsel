@@ -1,0 +1,85 @@
+2020-03-23
+    Jag har jobbat med pythonprojektet och fått allt att fungera.
+    1. Det finns kommer upp meddelenaden som med en timer visar ett 
+    meddelande under ca fem sekunder som säger ifall du svarat rätt
+    eller fel. 
+        1.1 Ifall du svarar rätt eller fel flera gånger påverkas
+        responsen du får. Antingen till det bättre eller sämre.
+    2. Jag är på fjärde frågan just nu och kommer nog fortsätta med
+    ganska många fler nu när jag fått in arbetssättet.
+        2.1 Alla svar skickar dig vidare till nästa fråga men då 
+        responsen kommer och stannar i fem sekunder känns det som 
+        att det skiftar mellan flera "sidor".
+
+2020-03-24
+    Under första lektionen jobbade jag med arduino och MQTT.
+    Jag skapade två topics, direction_forward och direction_backwards.
+    Därefter lärde jag mig connecta till mqtt.fx där man kan kolla
+    ifall det skickas meddelanden till ens topics. Jag tog även
+    reda på vad det var som fick motorn att snurra åt två olika håll. 
+
+    Under andra lektionen jobbade jag med mitt pythonprojekt. Jag
+    har gjort svaren lite mer intressanta och mer beroende av vad
+    användaren gör. Dessutom har jag lagt till en ny ruta som berättar
+    vilket svar som var rätt ifall användaren svarar fel.
+
+2020-03-27
+    Under sista lektionen har jag främst försökt implementera klasser
+    i min kod. Jag har även förberett för att skapa en app för att styra
+    min bil via npm install -g expo-cli i Windows PowerShell i mappen där
+    det går att se Driverbt (där jag ska ha appen sen). Efter det 
+    commandot har jag inte gjort någonting på den fronten. 
+
+2020-03-31
+    Jag har i helgen fixat mitt pythonprojekt. Jag har skapat en databas 
+    och implementerat klasser vilket ger snyggare och mer funktionabel kod.
+    Programmet blev även en del självgående. Jag behöver bara fylla på med
+    ytterligare frågor samt svar i databasen och den kör det utan någon 
+    förändring i huvudkoden! :)
+
+    Idag fixade jag MQTT och lite arduino och kan nu styra bilen via min 
+    hemsida. Alltså då få hjulen att snurra framåt och bakåt samt stå 
+    stilla. Det genom att göra en slider som har värdet 0, 1 eller 2. 
+    Jag gjorde en gemensam topic som heter /direction där min nodeMCU
+    antingen får hjulet att snurra framåt, bakåt eller inte alls beroende
+    på värdet från slidern.
+
+2020-04-20
+    Jag försökte få bilen att sluta köra så fort den disconnectar men det
+    visade sig att den disconnectar lite hela tiden så idéen behövde skrotas. 
+    Just nu håller jag på med "kotkey binds" så att det går lättare att 
+    kontrollera bilen. Än så länge sitter inte servot på men det kommer
+    så småningom. Fick problem med keybind och körde 
+    "npm install --save-dev @babel/preset-env" i terminalen.
+    Verkade vara ett problem med babel, som var en dependency. Problemet
+    löstes. Sen dök även ett problem med html-entities upp så jag körde
+    "npm install html-entities" i terminalen. Det löste inte problemet.
+    Efter "npm install --save vue-router" funkade det, konstigt nog.
+
+    Lektion 2 - Liten uppgradering av hemsidan. Försökte förstå vue
+    samt vuetify under hela lektionen utan framsteg.
+
+    Lektion 3 - Jobbar med layouten på hemsidan och har skrivit om 
+    arduino-koden efter exemplet. Ska implementera koden i hemsidan
+    efter att den är klar.
+2020-04-21
+    Lade till extra reaktioner på felaktiga samt rätta svar. Nu 
+    slumpartas även svaren från de olika kategorierna beroende 
+    på max antalet reaktioner i listan. 
+2020-04-28
+    Jag skulle säga att spelet är klart nu. Jag har gjort att 
+    efter 24 frågor får spelaren se hur många rätta respektiva
+    felaktiga svar den hade samt få ett score. Det går att spara 
+    i en fil som heter save och lätt få tag i vid huvudmenyn. 
+    Under slutfunktionen går det även att rensa sitt sparade 
+    high score. Det går även att avsluta till huvudmenyn mitt
+    i frågorna och stänga ner programmet helt från den menyn. 
+    Allra sist på dagen lade jag till små kommentarer från mig
+    som användaren får när spelet är klart beroende på hur många
+    rätta svar den fick.
+
+2020-06-02
+	Under de senaste lektionerna har jag gjort färdigt hemsidan 
+	och anpassat den efter exempelkoden i Arduino. Utöver det 
+	skickas nu meddelanden som Arduinokoden kan tolka och bilen 
+	fungerar som den ska.
